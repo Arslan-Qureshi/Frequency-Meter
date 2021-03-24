@@ -16,7 +16,7 @@ export default function RangeSlider() {
     let bubble = document.getElementById("bubble");
     const newVal = Number(((min - min) * 34) / (max - min));
     bubble.innerHTML = slide;
-    bubble.style.left = `calc(${newVal}% + (${215 - newVal}px))`;
+    bubble.style.left = `calc(${newVal}% + (${300 - newVal}px))`;
   }
   function setBubble(e, slide) {
     let bubble = document.getElementById("bubble");
@@ -34,19 +34,19 @@ export default function RangeSlider() {
     ) {
       // console.log(newVal);
       bubble.innerHTML = value;
-      bubble.style.left = `calc(${newVal + 0.6}% + (${215 - newVal * 0.15}px))`;
+      bubble.style.left = `calc(${newVal + 0.6}% + (${300 - newVal * 0.15}px))`;
       return;
     }
     // console.log(newVal);
     bubble.innerHTML = value;
     // Sorta magic numbers based on size of the native UI thumb
-    bubble.style.left = `calc(${newVal}% + (${215 - newVal * 0.15}px))`;
+    bubble.style.left = `calc(${newVal}% + (${300 - newVal * 0.15}px))`;
   }
   function intializeBubbleDown(min, max) {
     let bubble = document.getElementById("bubbledown");
     const newVal = Number(((min - min) * 34) / (max - min));
     bubble.innerHTML = slide;
-    bubble.style.left = `calc(${newVal}% + (${215 - newVal}px))`;
+    bubble.style.left = `calc(${newVal}% + (${300 - newVal}px))`;
   }
   function setBubbleDown(e, slide) {
     let bubble = document.getElementById("bubbledown");
@@ -64,13 +64,13 @@ export default function RangeSlider() {
     ) {
       // console.log(newVal);
       bubble.innerHTML = value;
-      bubble.style.left = `calc(${newVal + 0.6}% + (${215 - newVal * 0.15}px))`;
+      bubble.style.left = `calc(${newVal + 0.6}% + (${300 - newVal * 0.15}px))`;
       return;
     }
     // console.log(newVal);
     bubble.innerHTML = value;
     // Sorta magic numbers based on size of the native UI thumb
-    bubble.style.left = `calc(${newVal}% + (${215 - newVal * 0.15}px))`;
+    bubble.style.left = `calc(${newVal}% + (${300 - newVal * 0.15}px))`;
   }
   return (
     <div className={Classes.sliderWrapper}>
