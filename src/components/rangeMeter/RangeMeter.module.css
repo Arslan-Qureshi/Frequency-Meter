@@ -1,0 +1,17 @@
+.range {
+  height: 80px;
+  background-color: black;
+  color: white;
+}
+.upperDiv {
+  height: 40px;
+  border-style: dashed;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.lowerDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 18px 10px 10px;
+}
